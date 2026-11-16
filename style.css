@@ -270,8 +270,12 @@ main li + li { margin-top: .3em; }
     .modules-grid { grid-template-columns: 1fr; }
 }
 
-.lesson-layout { display: block; }
-.lesson-layout main { min-width: 0; max-width: 79ch; }
+.lesson .page { --lesson-measure: 79ch; }
+.lesson .page > :is(#breadcrumbs, .main-header, .lesson-layout) {
+    max-width: var(--lesson-measure);
+    margin-inline: auto;
+}
+.lesson-layout main { min-width: 0; }
 .lesson-layout main p, .lesson-layout main li, .lesson-layout main td { color: var(--text-secondary); }
 .lesson-layout main strong { color: var(--text-primary); }
 .lesson-layout h2 { margin: 1.7em 0 .65em; font-size: 1.45rem; letter-spacing: -.025em; }
@@ -299,14 +303,34 @@ main li + li { margin-top: .3em; }
 .lesson-toc :is(.toc-h4, .toc-h5, .toc-h6) { padding-inline-start: 1.25rem; }
 
 @media (min-width: 1131px) {
-    .lesson-layout:has(.lesson-toc) {
+    .lesson .page {
+        --sidebar-offset: 0px;
+        --toc-width: clamp(155px, 13vw, 216px);
+        --toc-gap: clamp(24px, 2vw, 36px);
+        /* Balance the left sidebar and leave room for the TOC beside the article. */
+        --lesson-width: min(
+            var(--lesson-measure),
+            calc(100% - var(--sidebar-offset)),
+            calc(100% + var(--sidebar-offset) - 2 * (var(--toc-width) + var(--toc-gap)))
+        );
+        --lesson-inset: calc((100% - var(--sidebar-offset) - var(--lesson-width)) / 2);
+        max-width: none;
+    }
+    .lesson .site-sidebar:not([hidden]) ~ .page {
+        --sidebar-offset: calc(var(--sidebar-width) + 1px);
+    }
+    .lesson .page > :is(#breadcrumbs, .main-header) {
+        width: var(--lesson-width);
+        margin-inline-start: var(--lesson-inset);
+    }
+    .lesson .page > .lesson-layout {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) clamp(155px, 15vw, 216px);
-        gap: clamp(24px, 3vw, 48px);
+        grid-template-columns: var(--lesson-inset) var(--lesson-width) var(--toc-gap) var(--toc-width);
+        max-width: none;
         align-items: start;
     }
     .lesson-toc {
-        grid-column: 2;
+        grid-column: 4;
         grid-row: 1;
         position: sticky;
         top: calc(var(--bar-height) + 24px);
@@ -318,7 +342,7 @@ main li + li { margin-top: .3em; }
         border-inline-start: 1px solid var(--line);
         border-radius: 0;
     }
-    .lesson-layout main { grid-row: 1; grid-column: 1; }
+    .lesson-layout main { grid-row: 1; grid-column: 2; }
 }
 
 .lesson-sequence { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 36px; }
