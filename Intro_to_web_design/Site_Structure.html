@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Structure | JIC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../site.js" defer></script>
 </head>
 
-<body>
+<body class="lesson">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
-    <a href="Web_Design_Hub.html" class="back-button">&larr; Back to Web Design Hub</a>
-    <div class="container">
+    <div class="container page">
+        <div id="breadcrumbs"><a href="Web_Design_Hub.html" class="back-button">&larr; Back to Web Design Hub</a></div>
         <div class="main-header">
             <h1>Designing a Multi-Page Site</h1>
             <p>How to structure and link multiple pages effectively.</p>
         </div>
 
-        <div class="section">
+        <div class="lesson-layout">
+        <main class="section" id="main-content" tabindex="-1">
             <h2>Site Structure</h2>
             <p>A real website consists of multiple pages linked together. Here is how to structure it properly.</p>
 
@@ -51,6 +52,7 @@
     &lt;!-- Use ../ if the css folder is one level up --&gt;
     &lt;link rel="stylesheet" href="css/style.css"&gt;
 &lt;/head&gt;</code></pre>
+        </main>
         </div>
 
         <footer class="main-footer">

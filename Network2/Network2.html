@@ -5,28 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Network 2 Hub | JIC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+    <script src="../site.js" defer></script>
 </head>
 
-<body>
+<body class="course">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
-    <a href="../index.html" class="back-button">&larr; Back to Main Hub</a>
-    <div class="container">
+    <div class="container page">
+        <div id="breadcrumbs"><a href="../index.html" class="back-button">&larr; Back to Main Hub</a></div>
         <header class="main-header">
             <h1>Network 2 Hub</h1>
             <p>Practical guides for Cisco IOS commands, switch and router configuration, routing protocols, and network
                 services using Cisco Packet Tracer.</p>
-            <div class="search-wrapper">
-                <input type="search" id="search-input" placeholder="Search topics (e.g., OSPF, VLAN, NAT)...">
-            </div>
         </header>
 
-        <div id="results-container" style="display: none;"></div>
-
-        <div class="modules-grid" id="main-content">
+        <main class="modules-grid" id="main-content" tabindex="-1">
             <a href="basic_cisco_cli.html" class="module-card">
                 <h2>Basic Cisco IOS CLI</h2>
                 <p>Learn the fundamental commands and modes for navigating the Cisco CLI.</p>
@@ -75,7 +69,7 @@
                 <h2>Remote Access</h2>
                 <p>Configure Telnet and the more secure SSH for remote device management.</p>
             </a>
-        </div>
+        </main>
 
         <footer class="main-footer">
             <p>If there are any mistakes or wrong info, please feel free to contact me at <a
@@ -84,7 +78,6 @@
                     target="_blank">Baslx0</a>.</p>
         </footer>
     </div>
-    <script src="../search.js"></script>
 </body>
 
 </html>

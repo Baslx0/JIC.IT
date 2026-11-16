@@ -5,28 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Basics Hub | JIC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+    <script src="../../site.js" defer></script>
 </head>
 
-<body>
+<body class="course">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
-    <a href="../Programming.html" class="back-button">&larr; Back to Programming Hub</a>
-    <div class="container">
+    <div class="container page">
+        <div id="breadcrumbs"><a href="../Programming.html" class="back-button">&larr; Back to Programming Hub</a></div>
         <div class="main-header">
             <h1>Python Basics Hub</h1>
             <p>Practical guides and references for various programming languages, focusing on fundamental concepts and
                 examples.</p>
-            <div class="search-container">
-                <input type="search" id="search-input" placeholder="Search Python topics...">
-            </div>
         </div>
 
-        <div id="results-container" style="display: none;"></div>
-
-        <div class="modules-grid" id="main-content">
+        <main class="modules-grid" id="main-content" tabindex="-1">
             <a href="python_introduction.html" class="module-card">
                 <h2>Introduction to Python</h2>
                 <p>Variables, data types, and essential string methods.</p>
@@ -47,7 +41,7 @@
                 <h2>File & Error Handling</h2>
                 <p>Reading from/writing to files and managing errors with try/except.</p>
             </a>
-        </div>
+        </main>
 
         <footer class="main-footer">
             <p>If there are any mistakes or wrong info please feel free to contact me on <a
@@ -56,47 +50,6 @@
                     target="_blank">Baslx0</a>.</p>
         </footer>
     </div>
-    <script>
-        // Simple search for this page
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.getElementById('search-input');
-            const cards = document.querySelectorAll('.module-card');
-            const mainContent = document.getElementById('main-content');
-            const resultsContainer = document.getElementById('results-container');
-
-            searchInput.addEventListener('input', () => {
-                const searchTerm = searchInput.value.toLowerCase();
-
-                if (searchTerm === '') {
-                    resultsContainer.style.display = 'none';
-                    mainContent.style.display = 'grid';
-                    cards.forEach(card => card.style.display = 'block');
-                    return;
-                }
-
-                mainContent.style.display = 'none';
-                resultsContainer.style.display = 'block';
-                resultsContainer.innerHTML = '';
-
-                const filteredCards = Array.from(cards).filter(card => {
-                    return card.textContent.toLowerCase().includes(searchTerm);
-                });
-
-                if (filteredCards.length > 0) {
-                    filteredCards.forEach(card => {
-                        const resultElement = document.createElement('div');
-                        resultElement.className = 'search-result-item';
-                        const title = card.querySelector('h2').textContent;
-                        const url = card.getAttribute('href');
-                        resultElement.innerHTML = `<a href="${url}">${title}</a>`;
-                        resultsContainer.appendChild(resultElement);
-                    });
-                } else {
-                    resultsContainer.innerHTML = '<p style="color: var(--text-muted);">No matching results found.</p>';
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

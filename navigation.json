@@ -1,0 +1,280 @@
+[
+  {
+    "title": "PC Config & Troubleshooting",
+    "url": "PCCT/PCCT.html",
+    "description": "Master Windows CLI, system diagnostics, disk management, and user administration.",
+    "children": [
+      {
+        "title": "System Information",
+        "url": "PCCT/system_info_commands.html",
+        "description": "Commands to view OS, hardware, and version details (systeminfo, msinfo32).",
+        "keywords": "systeminfo msinfo32 dxdiag winver dir"
+      },
+      {
+        "title": "File Attributes",
+        "url": "PCCT/file_attributes_commands.html",
+        "description": "Manage file properties like read-only, hidden, and system using 'attrib'.",
+        "keywords": "Basic File & Directory Commands mkdir (md) echo attrib Managing Attributes for a Single File Applying Attributes to a Folder and its Contents"
+      },
+      {
+        "title": "Disk Management",
+        "url": "PCCT/disk_management_commands.html",
+        "description": "Using format, diskpart, and other advanced disk utilities.",
+        "keywords": "How to create partition and format using CMD General CMD Commands format vol label Diskpart - General Disk Management List & Select Commands Create & Format Partitions Modify & Delete Partitions Information Commands Diskpart - VHD Management & MBR Partitioning Creating a Bootable USB Drive"
+      },
+      {
+        "title": "Drive Maintenance",
+        "url": "PCCT/drive_maintenance_commands.html",
+        "description": "Check for errors and defragment drives with chkdsk and defrag.",
+        "keywords": "cleanmgr (Disk Cleanup) chkdsk (Check Disk) defrag (Optimize Drives)"
+      },
+      {
+        "title": "User Management",
+        "url": "PCCT/user_management_commands.html",
+        "description": "Manage local accounts with 'net user' and 'lusrmgr.msc'.",
+        "keywords": "net user 'net user' Commands Display All Users Add a New User Display Specific User Information Activate or Deactivate a User Delete a User 'net localgroup' Commands Display All Groups Add a New Group Add a User to a Group Other Useful Commands hostname whoami shutdown GUI Tool: lusrmgr.msc"
+      },
+      {
+        "title": "System Recovery & Backup",
+        "url": "PCCT/system_recovery_commands.html",
+        "description": "Boot repair commands and creating System Restore points (rstrui.exe).",
+        "keywords": "Accessing Windows RE 1. System Protection / Create a Restore Point A. System Protection Tab B. Turn on System Protection C. Create a Manual Restore Point 2. System Restore rstrui.exe Other Backup Tools Backup and Restore (Windows 7)"
+      },
+      {
+        "title": "Device Management",
+        "url": "PCCT/device_management.html",
+        "description": "Managing hardware and drivers with the 'devmgmt.msc' tool.",
+        "keywords": "Accessing and Using Device Manager Key Functions:"
+      },
+      {
+        "title": "System Properties and startup",
+        "url": "PCCT/system_properties_and_startup.html",
+        "description": "Using 'sysdm.cpl' for virtual memory and startup configuration.",
+        "keywords": "System Properties (sysdm.cpl) Managing Virtual Memory Configuring Startup Applications I. Using Startup Folders (GUI Method) User Scope: All Users User Scope: Current User / Specific User II. Using the Windows Registry (Advanced Method) User Scope: All Users User Scope: Current User Microsoft Management Console (MMC) 5.1 What is the MMC? 5.2 Key Benefits of the MMC 5.3 Guide to Creating a Custom Console"
+      },
+      {
+        "title": "Services & Processes",
+        "url": "PCCT/services_processes.html",
+        "description": "Managing background tasks and applications with 'services.msc' and 'taskmgr.exe'.",
+        "keywords": "Task Manager (taskmgr.exe) Key Tabs & Functions: Services (services.msc) Managing a Service Checking Service Properties and Dependencies"
+      },
+      {
+        "title": "Registry & Event Viewer",
+        "url": "PCCT/registry_event_viewer.html",
+        "description": "Using 'regedit.exe' and 'eventvwr.msc' for advanced troubleshooting.",
+        "keywords": "Registry Editor (regedit.exe) Key Tasks: Event Viewer (eventvwr.msc) Key Logs: Event Viewer Log Analysis Log Management Steps:"
+      },
+      {
+        "title": "Hardware Fault Troubleshooting",
+        "url": "PCCT/Hardware_Fault_Troubleshooting.html",
+        "description": "Troubleshooting Hardware Fault.",
+        "keywords": "1. POST & Beep Codes (Startup Errors) Common Beep Codes (AMI/Award BIOS) 2. Drive & Boot Configuration SATA/HDD Errors Legacy IDE Configuration 3. Power Supply Unit (PSU) Check The \"Paperclip Test\" (Jump Start) Voltage Checks 4. Expansion Cards (PCI/PCIe)"
+      }
+    ]
+  },
+  {
+    "title": "Network Operating Systems",
+    "url": "NOSs/NOS.html",
+    "description": "Server administration, Active Directory, Domain Controllers, and File Services.",
+    "children": [
+      {
+        "title": "Environment Setup",
+        "url": "NOSs/environment_setup.html",
+        "description": "Creating VMs in Hyper-V and assigning static IP addresses.",
+        "keywords": "A. Creating Virtual Machines B. Assigning Static IP Addresses C. Assign IPs and ping Between DC-server and Client-PC 1. Assign ip to DC 2. Assign ip to client Pc and ping 3. Open CMD to ping"
+      },
+      {
+        "title": "Domain Controller Setup",
+        "url": "NOSs/dc_setup.html",
+        "description": "Installing and promoting a server to a Domain Controller.",
+        "keywords": "A. Add the AD DS Role B. Promote Server to a Domain Controller"
+      },
+      {
+        "title": "File Server Setup",
+        "url": "NOSs/fileserver_setup.html",
+        "description": "Configuring a server for centralized file sharing.",
+        "keywords": "A. Add the File Server Role B. Create a Shared Folder"
+      },
+      {
+        "title": "Disk Volume (RAID) Config",
+        "url": "NOSs/raid_config.html",
+        "description": "Creating spanned, striped (RAID 0), and mirrored (RAID 1) volumes."
+      },
+      {
+        "title": "Active Directory Management",
+        "url": "NOSs/ad_management.html",
+        "description": "Creating OUs, security groups, and user accounts."
+      },
+      {
+        "title": "Joining a Client to Domain",
+        "url": "NOSs/join_domain.html",
+        "description": "Connecting a Windows client machine to your Active Directory domain."
+      },
+      {
+        "title": "Linux OS",
+        "url": "NOSs/linux.html",
+        "description": "Basic Linux commands",
+        "keywords": "1. File and Directory Management Essentials VI Editor Basics 2. User and Group Management 2.1 User Administration Create User Modify User Delete User Change User Settings (Password Expiration) 2.2 Group Administration Create Group Modify Group Delete Group Group Membership Settings 3. File and Directory Ownership & Permissions 3.1 Ownership Commands Change Ownership (chown) Change Group Ownership (chgrp) 3.2 Permission Concepts 3.3 Changing Permissions Examples (Symbolic Mode) Examples (Numeric Mode) 3.4 UMASK 4. System Power Commands 5. Data Generation & Redirection (yes command) Example: Generate 200 lines of \"lol\""
+      },
+      {
+        "title": "DHCP Server",
+        "url": "NOSs/dhcp_server.html",
+        "description": "Configuring DHCP & DNS on Windows Server.",
+        "keywords": "1. Create Virtual Machine in Hyper-V 2. Install DHCP & DNS Roles 3. Create a DHCP Scope 4. Join Server to Domain 5. Client: Obtain IP from DHCP"
+      }
+    ]
+  },
+  {
+    "title": "Network 2",
+    "url": "Network2/Network2.html",
+    "description": "Advanced Cisco IOS, VLANs, OSPF, EIGRP, and enterprise routing protocols.",
+    "children": [
+      {
+        "title": "Basic Cisco IOS CLI",
+        "url": "Network2/basic_cisco_cli.html",
+        "description": "Learn the fundamental commands and modes for navigating the Cisco CLI.",
+        "keywords": "1. Navigating CLI Modes 2. First Steps & Identification Hostname Banner MOTD (Message of the Day) 3. Basic Interface Configuration 4. Essential 'Show' Commands 5. Saving and Erasing the Configuration Saving the Configuration Erasing the Configuration (Factory Reset) 6. Using CLI Help"
+      },
+      {
+        "title": "Switch Access Security",
+        "url": "Network2/Switch_Access_Security.html",
+        "description": "Securing Switch Access with passwords and usenname.",
+        "keywords": "Securing Switch Access 1. Console Port Security Using a Simple Password Using a Local Username and Password 2. Enable Mode (Privileged EXEC) Security Enable Password (Less Secure) Enable Secret (More Secure) 3. Password Encryption"
+      },
+      {
+        "title": "Switch Port Security",
+        "url": "Network2/switch_port_security.html",
+        "description": "Securing the switch with port security from unauthorized Pcs and Switches.",
+        "keywords": "Configuring Port Security Verification Protect a Cisco switch from another unauthorized switch"
+      },
+      {
+        "title": "VLSM & IP Addressing",
+        "url": "Network2/vlsm_addressing.html",
+        "description": "Understand and apply Variable Length Subnet Masking for efficient IP allocation.",
+        "keywords": "Understanding VLSM Calculating Subnets Subnet Mask Quick Reference Example Calculation Practical Example: Assigning IPs in Packet Tracer"
+      },
+      {
+        "title": "VLANs, Trunks, and VTP",
+        "url": "Network2/vlans_and_trunks.html",
+        "description": "Configure VLANs, trunk ports, VTP, Native VLANs, and Voice VLANs.",
+        "keywords": "1. VLAN Configuration Creating VLANs and Assigning Ports Verification 2. Trunking Configuration Verification 3. VLAN Trunking Protocol (VTP) VTP Modes Configuration Example 4. Native and Voice VLANs Native VLAN Voice VLAN 5.Another Video reference for DTP, Native VLAN, and Voice VLAN configurations"
+      },
+      {
+        "title": "EtherChannel",
+        "url": "Network2/etherchannel.html",
+        "description": "Bundle multiple physical links into a single logical link for higher bandwidth and redundancy.",
+        "keywords": "Layer 2 EtherChannel LACP (Link Aggregation Control Protocol) - IEEE Standard PAgP (Port Aggregation Protocol) - Cisco Proprietary Layer 3 EtherChannel Verification Load balancing"
+      },
+      {
+        "title": "Inter-VLAN Routing",
+        "url": "Network2/inter-vlan_routing.html",
+        "description": "Enable communication between different VLANs using a router or a Layer 3 switch.",
+        "keywords": "Router on a Stick (ROAS) Layer 3 Switch (SVI)"
+      },
+      {
+        "title": "Static & Default Routing",
+        "url": "Network2/static_routing.html",
+        "description": "Manually configure static and default routes to direct traffic between networks.",
+        "keywords": "Static Routing Another Video reference for Static Routing Default Routing Verification"
+      },
+      {
+        "title": "Dynamic Routing",
+        "url": "Network2/dynamic_routing.html",
+        "description": "Configure RIP, OSPF, and EIGRP to allow routers to automatically learn network routes.",
+        "keywords": "RIP (Routing Information Protocol) Another Video reference for RIP OSPF (Open Shortest Path First) Verification EIGRP Configuration On Router1 On Router2 On Router3 Verification"
+      },
+      {
+        "title": "Network Services",
+        "url": "Network2/network_services.html",
+        "description": "Configure DHCP, DNS, HTTP, FTP, and DHCP Relay on routers and servers.",
+        "keywords": "DHCP Server on a Cisco Router DNS Configuration on a Client Verification on a Cisco Router (acting as client)"
+      },
+      {
+        "title": "NAT Configuration",
+        "url": "Network2/nat_config.html",
+        "description": "Translate private IP addresses to public IPs using Static, Dynamic, and PAT (Overload).",
+        "keywords": "Static NAT Dynamic NAT PAT (NAT Overload) Verification"
+      },
+      {
+        "title": "Remote Access",
+        "url": "Network2/remote_access.html",
+        "description": "Configure Telnet and the more secure SSH for remote device management.",
+        "keywords": "Telnet (Insecure) SSH (Secure Shell)"
+      }
+    ]
+  },
+  {
+    "title": "Programming",
+    "url": "Programming/Programming.html",
+    "description": "Comprehensive guides for Python, scripting, and software development concepts.",
+    "children": [
+      {
+        "title": "Python",
+        "url": "Programming/Python/Python_language.html",
+        "description": "A beginner's guide to variables, data types, control flow, loops, and functions in Python.",
+        "children": [
+          {
+            "title": "Introduction to Python",
+            "url": "Programming/Python/python_introduction.html",
+            "description": "Variables, data types, and essential string methods.",
+            "keywords": "Variables and Data Types String Methods Formatted Strings (f-strings)"
+          },
+          {
+            "title": "Control Flow",
+            "url": "Programming/Python/python_control_flow.html",
+            "description": "Conditional statements (if/else) and loops (for/while).",
+            "keywords": "Conditional Statements (if, elif, else) Loops (for and while) For Loop While Loop"
+          },
+          {
+            "title": "Functions",
+            "url": "Programming/Python/python_functions.html",
+            "description": "Defining and using reusable blocks of code.",
+            "keywords": "Defining and Using Functions"
+          },
+          {
+            "title": "Data Structures",
+            "url": "Programming/Python/python_data_structures.html",
+            "description": "Working with Lists, Dictionaries, Tuples, and Sets.",
+            "keywords": "Lists Dictionaries Tuples and Sets Tuples Sets"
+          },
+          {
+            "title": "File & Error Handling",
+            "url": "Programming/Python/python_file_error_handling.html",
+            "description": "Reading from/writing to files and managing errors with try/except.",
+            "keywords": "Error Handling (try...except) File I/O (Input/Output) Writing to a File Reading from a File Appending to a File"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Network 1",
+    "url": "Network1/Network1.html",
+    "description": "Fundamental networking concepts. Coming Soon."
+  },
+  {
+    "title": "Intro to Web Design",
+    "url": "Intro_to_web_design/Web_Design_Hub.html",
+    "description": "HTML, CSS, and Web basics.",
+    "children": [
+      {
+        "title": "HTML Basics",
+        "url": "Intro_to_web_design/HTML_Basics.html",
+        "description": "The structure of the web. Tags, elements, and attributes.",
+        "keywords": "The Structure 1. Basic Structure 2. Common Tags"
+      },
+      {
+        "title": "CSS Basics",
+        "url": "Intro_to_web_design/CSS_Basics.html",
+        "description": "Styling your pages. Colors, fonts, and the Box Model.",
+        "keywords": "The Style 1. Syntax 2. Simple Examples 3. The Box Model"
+      },
+      {
+        "title": "Site Design & Structure",
+        "url": "Intro_to_web_design/Site_Structure.html",
+        "description": "How to organize folders and link multiple pages together.",
+        "keywords": "Site Structure 1. Folder Structure 2. Linking Pages 3. Sub-pages (e.g., about.html)"
+      }
+    ]
+  }
+]

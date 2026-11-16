@@ -5,28 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC Config & Troubleshooting Hub | JIC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+    <script src="../site.js" defer></script>
 </head>
 
-<body>
+<body class="course">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
-    <a href="../index.html" class="back-button">&larr; Back to Main Hub</a>
-    <div class="container">
+    <div class="container page">
+        <div id="breadcrumbs"><a href="../index.html" class="back-button">&larr; Back to Main Hub</a></div>
         <header class="main-header">
             <h1>PC Config & Troubleshooting</h1>
             <p>A quick reference for practical CLI commands and tools covered in the JIC PC Configuration &
                 Troubleshooting course.</p>
-            <div class="search-wrapper">
-                <input type="search" id="search-input" placeholder="Search for any topic or command...">
-            </div>
         </header>
 
-        <div id="results-container"></div>
-
-        <main class="modules-grid" id="main-content">
+        <main class="modules-grid" id="main-content" tabindex="-1">
             <a href="system_info_commands.html" class="module-card">
                 <h2>System Information</h2>
                 <p>Commands to view OS, hardware, and version details (systeminfo, msinfo32).</p>
@@ -80,7 +74,6 @@
                     target="_blank">Baslx0</a>.</p>
         </footer>
     </div>
-    <script src="../search.js"></script>
 </body>
 
 </html>

@@ -5,33 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming Hub | JIC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+    <script src="../site.js" defer></script>
 </head>
 
-<body>
+<body class="course">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
-    <a href="../index.html" class="back-button">&larr; Back to Main Hub</a>
-    <div class="container">
+    <div class="container page">
+        <div id="breadcrumbs"><a href="../index.html" class="back-button">&larr; Back to Main Hub</a></div>
         <header class="main-header">
             <h1>Programming</h1>
             <p>Practical guides and references for various programming languages, focusing on fundamental concepts and
                 examples.</p>
-            <div class="search-wrapper">
-                <input type="search" id="search-input" placeholder="Search for any topic or command...">
-            </div>
         </header>
 
-        <div id="results-container" style="display: none;"></div>
-
-        <div class="modules-grid" id="main-content">
+        <main class="modules-grid" id="main-content" tabindex="-1">
             <a href="Python/Python_language.html" class="module-card">
                 <h2>Python</h2>
                 <p>A beginner's guide to variables, data types, control flow, loops, and functions in Python.</p>
             </a>
-        </div>
+        </main>
 
         <footer class="main-footer">
             <p>If there are any mistakes or wrong info please feel free to contact me on <a
@@ -40,7 +34,6 @@
                     target="_blank">Baslx0</a>.</p>
         </footer>
     </div>
-    <script src="../search.js"></script>
 </body>
 
 </html>

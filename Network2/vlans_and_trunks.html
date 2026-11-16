@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VLANs, Trunks, and VTP | Network 2 Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../site.js" defer></script>
 </head>
 
-<body>
+<body class="lesson">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
-    <a href="Network2.html" class="back-button">&larr; Back to Network 2 Hub</a>
-    <div class="container">
+    <div class="container page">
+        <div id="breadcrumbs"><a href="Network2.html" class="back-button">&larr; Back to Network 2 Hub</a></div>
         <header class="main-header">
             <h1>VLANs, Trunks, and VTP</h1>
         </header>
-        <main>
+        <div class="lesson-layout">
+        <main id="main-content" tabindex="-1">
             <section class="section">
                 <h2>1. VLAN Configuration</h2>
                 <p>VLANs (Virtual LANs) logically segment a switch into separate broadcast domains. Devices in one VLAN
@@ -108,8 +109,8 @@ Gig0/1      1-4094
                 <pre>
 <code class="output">SW1(config)# </code><code class="user-input">interface port-channel 1</code>
 <code class="output">SW2(config-if)# </code><code class="user-input">switchport mode trunk</code>
-<h5 class="note">Note: if you did all these steps and Vlans still not shows up , try to disconnect the links then reconnect them at same interface , and check VTP configuration on all switches</h5>
 </pre>
+                <h5 class="note">Note: if you did all these steps and Vlans still not shows up , try to disconnect the links then reconnect them at same interface , and check VTP configuration on all switches</h5>
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/wCsk9omVxmY" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -147,6 +148,7 @@ Gig0/1      1-4094
                 </div>
             </section>
         </main>
+        </div>
         <footer class="main-footer">
             <p>If there are any mistakes or wrong info, please feel free to contact me at <a
                     href="mailto:BSA717@outlook.sa" target="_blank">BSA717@outlook.sa</a>.</p>

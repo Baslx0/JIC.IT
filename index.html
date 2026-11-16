@@ -5,51 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses Practical Hub | JIC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+    <script src="site.js" defer></script>
 </head>
 
-<body>
-    <div class="container">
+<body class="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="container page">
         <header class="main-header">
+            <p class="site-context">Jubail Industrial College <span> / </span> Computer &amp; Information Technology</p>
             <h1>Courses Practical Hub</h1>
             <p>Your ultimate reference for JIC practical courses. CLI commands, configurations, and troubleshooting
                 guides at your fingertips.</p>
-            <div class="search-wrapper">
-                <input type="search" id="search-input" placeholder="Search topics, commands, or modules..."
-                    autocomplete="off">
-            </div>
+            <button class="quiet-button hero-search" type="button" data-open-search hidden>Find a course or lesson</button>
         </header>
 
-        <div id="results-container"></div>
-
-        <main class="modules-grid" id="main-content">
-            <a href="PCCT/PCCT.html" class="module-card">
-                <h2>PC Config & Troubleshooting</h2>
-                <p>Master Windows CLI, system diagnostics, disk management, and user administration.</p>
-            </a>
-            <a href="NOSs/NOS.html" class="module-card">
-                <h2>Network Operating Systems</h2>
-                <p>Server administration, Active Directory, Domain Controllers, and File Services.</p>
-            </a>
-            <a href="Network2/Network2.html" class="module-card">
-                <h2>Network 2</h2>
-                <p>Advanced Cisco IOS, VLANs, OSPF, EIGRP, and enterprise routing protocols.</p>
-            </a>
-            <a href="Programming/Programming.html" class="module-card">
-                <h2>Programming</h2>
-                <p>Comprehensive guides for Python, scripting, and software development concepts.</p>
-            </a>
-            <div class="module-card disabled">
-                <h2>Network 1</h2>
-                <p>Fundamental networking concepts. Coming Soon.</p>
+        <main id="main-content" tabindex="-1" aria-labelledby="courses-heading">
+            <h2 class="collection-heading" id="courses-heading">Browse courses</h2>
+            <div class="modules-grid">
+                <a href="PCCT/PCCT.html" class="module-card">
+                    <h2>PC Config & Troubleshooting</h2>
+                    <p>Master Windows CLI, system diagnostics, disk management, and user administration.</p>
+                </a>
+                <a href="NOSs/NOS.html" class="module-card">
+                    <h2>Network Operating Systems</h2>
+                    <p>Server administration, Active Directory, Domain Controllers, and File Services.</p>
+                </a>
+                <a href="Network2/Network2.html" class="module-card">
+                    <h2>Network 2</h2>
+                    <p>Advanced Cisco IOS, VLANs, OSPF, EIGRP, and enterprise routing protocols.</p>
+                </a>
+                <a href="Programming/Programming.html" class="module-card">
+                    <h2>Programming</h2>
+                    <p>Comprehensive guides for Python, scripting, and software development concepts.</p>
+                </a>
+                <a class="module-card" href="Network1/Network1.html">
+                    <h2>Network 1</h2>
+                    <p>Fundamental networking concepts. Coming Soon.</p>
+                </a>
+                <a href="Intro_to_web_design/Web_Design_Hub.html" class="module-card">
+                    <h2>Intro to Web Design</h2>
+                    <p>HTML, CSS, and Web basics.</p>
+                </a>
             </div>
-            <a href="Intro_to_web_design/Web_Design_Hub.html" class="module-card">
-                <h2>Intro to Web Design</h2>
-                <p>HTML, CSS, and Web basics.</p>
-            </a>
         </main>
     </div>
 
@@ -60,7 +58,6 @@
                     target="_blank">Baslx0</a>.</p>
         </div>
     </footer>
-    <script src="search.js"></script>
 </body>
 
 </html>
