@@ -271,7 +271,7 @@ main li + li { margin-top: .3em; }
 }
 
 .lesson .page { --lesson-measure: 79ch; }
-.lesson .page > :is(#breadcrumbs, .main-header, .lesson-layout) {
+.lesson .page > :is(#breadcrumbs, .main-header) {
     max-width: var(--lesson-measure);
     margin-inline: auto;
 }
@@ -302,6 +302,13 @@ main li + li { margin-top: .3em; }
 .lesson-toc .toc-h3 { padding-inline-start: .65rem; }
 .lesson-toc :is(.toc-h4, .toc-h5, .toc-h6) { padding-inline-start: 1.25rem; }
 
+@media (width < 1131px) {
+    .lesson-layout {
+        max-width: var(--lesson-measure);
+        margin-inline: auto;
+    }
+}
+
 @media (min-width: 1131px) {
     .lesson .page {
         --sidebar-offset: 0px;
@@ -326,7 +333,6 @@ main li + li { margin-top: .3em; }
     .lesson .page > .lesson-layout {
         display: grid;
         grid-template-columns: var(--lesson-inset) var(--lesson-width) var(--toc-gap) var(--toc-width);
-        max-width: none;
         align-items: start;
     }
     .lesson-toc {
