@@ -2,15 +2,15 @@
     color-scheme: dark;
     --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
     --font-mono: "IBM Plex Mono", "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
-    --surface: #141619;
-    --panel: #191c20;
-    --terminal: #101215;
-    --line: #30343a;
+    --surface: #0d0f12;
+    --panel: #121519;
+    --terminal: #090b0e;
+    --line: #292e35;
     --text-primary: #eeeef0;
     --text-secondary: #b8bcc4;
     --muted: #a0a6af;
     --accent: #a8c8f1;
-    --selected: #242f3e;
+    --selected: #1a2635;
     --primary-blue: var(--accent);
     --bar-height: 62px;
     --sidebar-width: 250px;
@@ -253,7 +253,7 @@ main li + li { margin-top: .3em; }
     inset-inline-end: 16px;
     color: var(--muted);
 }
-.module-card:is(:hover, :focus-visible) { border-color: #71849b; background: #1d2229; }
+.module-card:is(:hover, :focus-visible) { border-color: #71849b; background: #171d25; }
 .module-card:is(:hover, :focus-visible) h2, .module-card:is(:hover, :focus-visible)::after { color: var(--accent); }
 .module-card h2 { margin: 0 0 .42rem; font-size: 1.02rem; letter-spacing: -.012em; }
 .module-card p { margin: 0; color: var(--text-secondary); font-size: .9rem; line-height: 1.55; }
@@ -359,7 +359,7 @@ main li + li { margin-top: .3em; }
 .lesson-layout .lesson-sequence strong { color: var(--accent); font-size: .9rem; }
 
 pre, code, kbd { font-family: var(--font-mono); }
-code { padding: .1em .25em; border-radius: 3px; background: #242a31; color: var(--accent); }
+code { padding: .1em .25em; border-radius: 3px; background: #1b222b; color: var(--accent); }
 pre {
     max-width: 100%;
     margin: 1em 0;

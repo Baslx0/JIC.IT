@@ -9,6 +9,6 @@ Disclaimer: This project is an unofficial, personal effort and is not affiliated
 
 ## Site layout
 
-The homepage directory uses up to three columns based on available content width. Course pages and lessons share the site shell in `style.css`, with a centered footer below the content and navigation. Lesson pages center the reading column, with a sticky contents list beside it on desktop and a collapsible list above it on smaller screens. The course tree and search use `navigation.json`, while lesson content lives in its original HTML files.
+The homepage directory uses up to three columns based on available content width. Course pages and lessons share the site shell in `style.css`, with a dark palette defined by the CSS color tokens and a centered footer below the content and navigation. Lesson pages center the reading column, with a sticky contents list beside it on desktop and a collapsible list above it on smaller screens. The course tree and search use `navigation.json`, while lesson content lives in its original HTML files.
 
 To preview locally, run `python -m http.server 8000` from the repository root and open `http://localhost:8000`.
